@@ -178,26 +178,6 @@ html {
     border:none;
   }
 
-  .bpw-powered {
-    text-align: center;
-    padding: 10px;
-    color: #ffffff;
-    background:  #141414;
-    font-size: 16px;
-    border-top: none;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-  }
-
-  .bpw-powered a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .bpw-powered a:hover {
-    text-decoration: underline;
-  }
-
   .bpw-send-button:disabled,
   .bpw-send-button:disabled:hover {
     opacity: 0.4;
