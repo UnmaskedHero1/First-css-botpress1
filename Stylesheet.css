@@ -183,14 +183,14 @@ html {
     padding: 10px;
     color: #ffffff;
     background:  #141414;
-    font-size: 16px;
+    font-size: 1px;
     border-top: none;
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 45px;
   }
 
   .bpw-powered a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
   }
 
