@@ -1,0 +1,54 @@
+<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  //customization for bot
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Joseph",
+    
+    //heading under bot title
+      "botConversationDescription": "This bot is by HeroAI",
+      "botId": "dcb0640c-8c26-4b7c-8488-1e02a19fa4de",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "dcb0640c-8c26-4b7c-8488-1e02a19fa4de",
+    
+    //name of the bot
+      "botName": "Joseph",
+    
+    //image of the bot
+      "avatarUrl": "https://unmaskedhero1.github.io/First-css-botpress1/ncmartial6.png",
+    
+    //style of bot UI
+      "stylesheet": "https://unmaskedhero1.github.io/First-css-botpress1/Stylesheet.css",
+    
+    //where convo is stored for bot
+      "useSessionStorage": true,
+    
+    //enabling trash can on bot
+      "enableConversationDeletion": true,
+    
+      "showPoweredBy": false
+  });
+  
+  //executes when the page loads
+  window.addEventListener("load", function() {
+    
+    //open the chatbot because the trigger doesn't work if the chatbot isn't open
+    window.botpressWebChat.sendEvent({ type: "show" });
+    
+    //window.botpressWebChat.sendEvent({type: "loadConversation"});
+    setTimout(function() {
+      
+      //sends payload to the trigger
+      window.botpressWebChat.sendPayload({
+        type: "trigger",
+        payload: {}
+      });
+    }, 1000); //3.5 secs
+  });
+  
+  //Javascript code to handle button click events
+  document.GetElementById('showButton').addEventListener('click', function () {
+    console.log("showing bot...")
+    window.botpressWebChat.sendEvent({ type: "show" })
+  });
+</script>
